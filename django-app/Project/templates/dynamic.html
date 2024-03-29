@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Django App" />
+{% load static %}
+<title>Django</title>
+{% for item in data %}
+<img src="{{ item.flags.svg }}" alt="{{ item.flags.alt }}" width="200" height="200"/>
+<p>{{item.name.common}}</p>
+{% endfor %}
+</html>     
